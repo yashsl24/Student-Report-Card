@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <conio.h>
@@ -38,9 +37,12 @@ public:
   void search_class(); 
   void single_report_card();
   void report_single(); 
-  void report_class(); 
-
-  void report_school(); 
+  void report_class();
+  void report_school();
+  ~report()
+  {
+  	cout << "Memory is now free to be allocated..." << endl;
+  }
 };
 
 /* function to show main menu ------------*/
@@ -361,8 +363,8 @@ void report::single_report_card()
 {
   system("cls");
 
-  cout << "\n\t\t DAV Centenary Public School , Chander Nagar";
-  cout << "\n\t\t Session : 2012-13";
+  cout << "\n\t\t Guru Harkrishan Public School, Khandwa Road Indore";
+  cout << "\n\t\t Session : 2019-20";
   cout << "\n-------------------------------------------------------------------------------";
   cout << "\n\n Admno :" << admno;
   cout << "\n\n Name  :" << name << "\t\t Father Name :" << fname << "\t\t class :" << std << "-" << section;
@@ -429,8 +431,8 @@ void report::report_class()
 
   system("cls");
 
-  cout << "\n\t\t D.A.V. Centenary Public School Chander Nagar, GZB";
-  cout << "\n\t\t Class :" << tstd << "-" << tsect << "\t\t Session : 2012-13" << endl;
+  cout << "\n\t\t Guru Harkrishan Public School, Khandwa Road Indore";
+  cout << "\n\t\t Class :" << tstd << "-" << tsect << "\t\t Session : 2019-20" << endl;
   cout << "-------------------------------------------------------------------------------" << endl;
   cout << "Admno\tName\tFname\t Phy \t Chem\t Math \t Comp \t Eng \t Total \t per\n";
   cout << "-------------------------------------------------------------------------------" << endl;
@@ -445,8 +447,8 @@ void report::report_class()
       {
         cout << "\n\n  Press any key to continue ................";
         getch();
-        cout << "\n\t\t D.A.V. Centenary Public School Chander Nagar, GZB";
-        cout << "\n\t\t Class :" << tstd << "-" << tsect << "\t\t Session : 2012-13" << endl;
+        cout << "\n\t\t Guru Harkrishan Public School, Khandwa Road Indore";
+        cout << "\n\t\t Class :" << tstd << "-" << tsect << "\t\t Session : 2019-20" << endl;
         cout << "-------------------------------------------------------------------------------" << endl;
         cout << "Admno\tName\tFname\t Phy \t Chem\t Math \t Comp \t Eng \t Total \t per\n";
         cout << "-------------------------------------------------------------------------------" << endl;
@@ -458,7 +460,7 @@ void report::report_class()
   fin.close();
   cout << "-------------------------------------------------------------------------------" << endl;
   cout << "\n Total Student : " << no << " Report prepared By  :"
-       << " Rakesh Kumar ";
+       << " Yash Seghal ";
   getch();
   return;
 }
@@ -479,8 +481,8 @@ void report::report_school()
 
   system("cls");
 
-  cout << "\n\t\t D.A.V. Centenary Public School Chander Nagar, GZB";
-  cout << "\n\t\t Class :" << tstd << "-" << tsect << "\t\t Session : 2012-13" << endl;
+  cout << "\n\t\t Guru Harkrishan Public School, Khandwa Road Indore";
+  cout << "\n\t\t Class :" << tstd << "-" << tsect << "\t\t Session : 2019-20" << endl;
   cout << "-------------------------------------------------------------------------------" << endl;
   cout << "Admno\tName\tFname\t Phy \t Chem\t Math \t Comp \t Eng \t Total \t per\n";
   cout << "-------------------------------------------------------------------------------" << endl;
@@ -493,8 +495,8 @@ void report::report_school()
     {
       cout << "\n\n  Press any key to continue ................";
       getch();
-      cout << "\n\t\t D.A.V. Centenary Public School Chander Nagar, GZB";
-      cout << "\n\t\t Class :" << tstd << "-" << tsect << "\t\t Session : 2012-13" << endl;
+      cout << "\n\t\t Guru Harkrishan Public School, Khandwa Road Indore";
+      cout << "\n\t\t Class :" << tstd << "-" << tsect << "\t\t Session : 2019-20" << endl;
       cout << "-------------------------------------------------------------------------------" << endl;
       cout << "Admno\tName\tFname\t Phy \t Chem\t Math \t Comp \t Eng \t Total \t per\n";
       cout << "-------------------------------------------------------------------------------" << endl;
@@ -505,7 +507,7 @@ void report::report_school()
   fin.close();
   cout << "-------------------------------------------------------------------------------" << endl;
   cout << "\n Total Student : " << no << " Report prepared By  :"
-       << " Rakesh Kumar ";
+       << " Yash Sehgal ";
   getch();
   return;
 }
